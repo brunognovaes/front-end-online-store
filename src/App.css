@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.material-icons-outlined {
+  color: black;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+  display: table;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Início dos estilos da página Home */
+.main-home {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 5px;
+}
+
+.categories-list {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 10px;
+  position: fixed;
+  width: 20%;
+}
+
+.category-button {
+  background-color: transparent;
+  border: transparent;
+  color: rgb(91, 91, 91);
+  font-family: Verdana , Geneva , Tahoma , sans-serif;
+  font-size: 13px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.category-button:hover {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.main-products-section {
+  background-color: white;
+  color: rgb(91, 91, 91);
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 20%;
+  margin-right: 2%;
+  margin-top: 8%;
+  width: 80%;
+}
+
+.main-products-header {
+  align-items: center;
+  background-color: rgb(33, 114, 84);
+  border-bottom: solid rgb(255, 134, 5) 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-bar input {
+  border: transparent;
+  border-radius: 5px;
+  height: 35px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  width: 60%;
+}
+
+.search-bar button {
+  border: transparent;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.search-bar button:hover {
+  color: rgb(33, 114, 84);
+}
+
+.open-text {
+  color: white;
+  font-size: 15px;
+}
+
+.search-button {
+  background-color: white;
+  border-radius: 5px;
+  color: rgb(255, 134, 5);
+  font-size: 30px;
+  width: 50px;
+}
+
+.shopping-cart-button {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  width: 200px;
+}
+
+.shopping-cart {
+  color: white;
+  font-size: 50px;
+}
+
+.shopping-cart-number {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  color: rgb(33, 114, 84);
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  height: 25px;
+  justify-content: center;
+  width: 25px;
+}
+
+.header-image {
+  padding-left: 100px;
+  width: 200px;
+}
+
+/* Fim dos estilos da página Home */
+
+
+/* Início dos estilos do componente RatingForm */
+.rating-section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.rating-form {
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+  padding: 10px;
+}
+
+.rating-form div {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.rating-form label {
+  display: flex;
+}
+
+.rating-comments-section {
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+
+/* Fim dos estilos do componente RatingForm */
+
+/* Início dos estilos do componente StarsRating */
+.star {
+  background-color: unset;
+  border: none;
+}
+
+.filled {
+  color: #e0d14f;
+}
+
+/* Fim dos estilos do componente StarsRating */
+
+/* Início dos estilos do componente Comment */
+.rating-comment {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.rating-comment div {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* Fim dos estilos do componente Comment */
+
+/* Início dos estilos dos Product Cards */
+.card-image {
+  height: 50%;
+  width: 100%;
+}
+
+.product-card {
+  align-items: center;
+  background-color: white;
+  border: solid 2px rgb(240, 240, 240);
+  display: flex;
+  flex-flow: column;
+  height: 350px;
+  padding: 10px;
+  width: 300px;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 4px rgb(255, 134, 5);
+  top: -4px;
+}
+
+.buy-btn {
+  background-color: rgb(33, 114, 84);
+  border-radius: 8%;
+  color: white;
+  font-size: 18px;
+  width: 260px;
+}
+
+.details-btn {
+  background-color: rgb(255, 134, 5);
+  border-radius: 8%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 260px;
+}
+
+/* Fim dos estilos dos Product Cards */
+
+/* Início dos estilos da página Home */
+.cart-section {
+  background-color: #217254;
+  border-top: none;
+  bottom: 0;
+  box-shadow: -4px 9px 15px black;
+  color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Verdana , Geneva , Tahoma , sans-serif;
+  gap: 10px;
+  height: 100vh;
+  left: 100%;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  transition: left 2s;
+  width: 30vw;
+}
+
+.cart-slide {
+  left: 70vw;
+}
+
+.checkout-btn {
+  background-color: #ff8605;
+  border: none;
+  border-radius: 5px;
+  color: rgb(34, 34, 34);
+  font-size: 15px;
+  font-weight: 700;
+  height: 25px;
+  width: 100%;
+}
+
+.cart-product-list {
+  background-color: rgb(144, 204, 121);
+  border-radius: 5px;
+  height: 70vh;
+  overflow: scroll;
+  padding: 10px;
+}
+
+/* Fim dos estilos da página Home */
+
+/* Início dos estilos da página Checkout */
+.checkout-all {
+  margin: 10px 0 10px 10px;
+}
+
+.checkout-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.checkout-product-card {
+  background-color: #90cc79;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.checkout-product-card-data {
+  margin: -5px 0 0 10px;
+}
+
+.checkout-product-card-text p {
+  margin-top: 10px;
+}
+
+.checkout-product-card img {
+  border: 1px solid white;
+  padding: 3px;
+  width: 120px;
+}
+
+.checkout-products-list {
+  margin-bottom: 20px;
+}
+
+.buyerform-all {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0 20px;
+  width: 600px;
+}
+
+.buyerform-fieldset {
+  background-color: #90cc79;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.buyerform-fieldset legend {
+  background-color: #90cc79;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 2px;
+}
+
+.paymentform-all {
+  margin-bottom: 20px;
+  width: 600px;
+}
+
+.paymentform-fieldset {
+  background-color: #90cc79;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.paymentform-fieldset legend {
+  background-color: #90cc79;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 2px;
+}
+
+.checkout-button {
+  background-color: #90cc79;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 10px;
+}
